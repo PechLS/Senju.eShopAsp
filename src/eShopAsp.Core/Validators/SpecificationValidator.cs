@@ -6,7 +6,7 @@ namespace eShopAsp.Core.Validators;
 public class SpecificationValidator : ISpecificationValidator
 {
 
-    public static SpecificationValidator Default { get; } = new();
+    public static SpecificationValidator Instance { get; } = new();
 
     private readonly List<IValidator> _validators = new();
 
