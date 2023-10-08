@@ -52,13 +52,13 @@ public class Specification<T> : ISpecification<T>
     }
 
     public IDictionary<string, object> Items { get; set; } = new Dictionary<string, object>();
-    public IEnumerable<WhereExpressionInfo<T>>? WhereExpressions { get; } = new List<WhereExpressionInfo<T>>();
-    public IEnumerable<OrderExpressionInfo<T>>? OrderExpressions { get; } = new List<OrderExpressionInfo<T>>();
-    public IEnumerable<IncludeExpressionInfo>? IncludeExpressions { get; } = new List<IncludeExpressionInfo>();
+    public IEnumerable<WhereExpressionInfo<T>> WhereExpressions { get; } = new List<WhereExpressionInfo<T>>();
+    public IEnumerable<OrderExpressionInfo<T>> OrderExpressions { get; } = new List<OrderExpressionInfo<T>>();
+    public IEnumerable<IncludeExpressionInfo> IncludeExpressions { get; } = new List<IncludeExpressionInfo>();
     public IEnumerable<string> IncludeStrings { get; } = new List<string>();
-    public IEnumerable<SearchExpressionInfo<T>>? SearchCriterias { get; } = new List<SearchExpressionInfo<T>>();
-    public int? Take { get; } = null;
-    public int? Skip { get; } = null;
+    public IEnumerable<SearchExpressionInfo<T>> SearchCriterias { get; } = new List<SearchExpressionInfo<T>>();
+    public int? Take { get; internal set; } = null;
+    public int? Skip { get; internal set; } = null;
     public Func<IEnumerable<T>, IEnumerable<T>>? PostProcessingAction { get; internal set; } = null;
     public bool CacheEnabled { get; internal set; } 
     public string? CacheKey { get; internal set; }
