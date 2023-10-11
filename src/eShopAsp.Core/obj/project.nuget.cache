@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "pGGBkiY+Sjovo5WYQjM7I4uV0H6E9esakNSWkOMjKpimsnxWqXAnP7Z82MuTq19mnabrPJvLbRmm1BLRtchBcg==",
+  "dgSpecHash": "nV2oPVVyoAJQd9emSC5cadO/DTOq5H2OGaKAVZoBnG9CZYa+g7RguDVF0eHolgmcJq1EYN+u9sODIixicXdLSg==",
   "success": true,
   "projectFilePath": "/home/dangpech/learn/project/Senju.eShopAsp/src/eShopAsp.Core/eShopAsp.Core.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/home/dangpech/.nuget/packages/mediatr/12.1.1/mediatr.12.1.1.nupkg.sha512",
+    "/home/dangpech/.nuget/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512",
+    "/home/dangpech/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/6.0.0/microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "/home/dangpech/.nuget/packages/microsoft.extensions.logging.abstractions/7.0.1/microsoft.extensions.logging.abstractions.7.0.1.nupkg.sha512"
+  ],
   "logs": []
 }

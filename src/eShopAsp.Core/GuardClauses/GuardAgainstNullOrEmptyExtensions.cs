@@ -1,4 +1,5 @@
 using System.Diagnostics.CodeAnalysis;
+using System.Runtime.CompilerServices;
 
 namespace eShopAsp.Core.GuardClauses;
 
@@ -7,7 +8,7 @@ public static partial class GuardClauseExtensions
     public static T Null<T>(
         this IGuardClause guardClause,
         [NotNull] [ValidatedNotNull] T? input,
-        string paramName,
+        [CallerArgumentExpression("input")] string? paramName = null,
         string? message = null)
     {
         if (input is null)
@@ -22,7 +23,7 @@ public static partial class GuardClauseExtensions
     public static T Null<T>(
         this IGuardClause guardClause,
         [NotNull] [ValidatedNotNull] T? input,
-        string paramName,
+        [CallerArgumentExpression("input")] string? paramName = null,
         string? message = null) where T : struct
     {
         if (input is null)
@@ -37,7 +38,7 @@ public static partial class GuardClauseExtensions
     public static string NullOrEmpty(
         this IGuardClause guardClause,
         [NotNull] [ValidatedNotNull] string? input,
-        string paramName,
+        [CallerArgumentExpression("input")] string? paramName = null,
         string? message = null)
     {
         Guard.Against.Null(input, paramName, message);
@@ -49,7 +50,7 @@ public static partial class GuardClauseExtensions
     public static Guid NullOrEmpty(
         this IGuardClause guardClause,
         [NotNull] [ValidatedNotNull] Guid? input,
-        string paramName,
+        [CallerArgumentExpression("input")] string? paramName = null,
         string? message = null)
     {
         Guard.Against.Null(input, paramName, message);
@@ -61,7 +62,7 @@ public static partial class GuardClauseExtensions
     public static IEnumerable<T> NullOrEmpty<T>(
         this IGuardClause guardClause,
         [NotNull] [ValidatedNotNull] IEnumerable<T>? input,
-        string paramName,
+        [CallerArgumentExpression("input")] string? paramName = null,
         string? message = null)
     {
         Guard.Against.Null(input, paramName, message);
@@ -73,7 +74,7 @@ public static partial class GuardClauseExtensions
     public static string NullOrWhiteSpace(
         this IGuardClause guardClause,
         [NotNull] [ValidatedNotNull] string? input,
-        string paramName,
+        [CallerArgumentExpression("input")] string? paramName = null,
         string? message = null)
     {
         Guard.Against.NullOrEmpty(input, paramName, message);
@@ -85,7 +86,7 @@ public static partial class GuardClauseExtensions
     public static T Default<T>(
         this IGuardClause guardClause,
         [AllowNull, NotNull] T input,
-        string paramName,
+        [CallerArgumentExpression("input")] string? paramName = null,
         string? message = null)
     {
         if (EqualityComparer<T>.Default.Equals(input, default(T)!) || input is null)

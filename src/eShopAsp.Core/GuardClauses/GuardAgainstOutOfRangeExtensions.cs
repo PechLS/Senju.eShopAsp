@@ -1,5 +1,6 @@
 using System.ComponentModel;
 using System.Diagnostics.CodeAnalysis;
+using System.Runtime.CompilerServices;
 
 namespace eShopAsp.Core.GuardClauses;
 
@@ -8,7 +9,7 @@ public static partial class GuardClauseExtensions
     public static int EnumOutOfRange<T>(
         this IGuardClause guardClause,
         int input,
-        string paramName,
+        [CallerArgumentExpression("input")] string? paramName = null,
         string? message = null) where T : struct, Enum
     {
         if (!Enum.IsDefined(typeof(T), input))
@@ -22,7 +23,7 @@ public static partial class GuardClauseExtensions
     public static T EnumOurOfRange<T>(
         this IGuardClause guardClause,
         T input,
-        string paramName,
+        [CallerArgumentExpression("input")] string? paramName = null,
         string? message = null) where T : struct, Enum
     {
         if (!Enum.IsDefined(typeof(T), input))
@@ -59,7 +60,7 @@ public static partial class GuardClauseExtensions
     public static DateTime NullOrOutOfSqlDateRange(
         this IGuardClause guardClause,
         [NotNull] [ValidatedNotNull] DateTime? input,
-        string paramName,
+        [CallerArgumentExpression("input")] string? paramName = null,
         string? message = null)
     {
         guardClause.Null(input, nameof(input));
@@ -69,7 +70,7 @@ public static partial class GuardClauseExtensions
     public static DateTime OutOfSqlDateRange(
         this IGuardClause guardClause,
         DateTime input,
-        string paramName,
+        [CallerArgumentExpression("input")] string? paramName = null,
         string? message = null)
     {
         // System.Data is unavailable in .NET standard so we can't use SQLDateTime.

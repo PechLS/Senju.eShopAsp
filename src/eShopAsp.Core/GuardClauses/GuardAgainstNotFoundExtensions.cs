@@ -1,4 +1,5 @@
 using System.Diagnostics.CodeAnalysis;
+using System.Runtime.CompilerServices;
 using eShopAsp.Core.Exceptions;
 
 namespace eShopAsp.Core.GuardClauses;
@@ -9,7 +10,7 @@ public static partial class GuardClauseExtensions
         this IGuardClause guardClause,
         [NotNull] [ValidatedNotNull] string key,
         [NotNull] [ValidatedNotNull] T? input,
-        string paramName)
+        [CallerArgumentExpression("input")] string? paramName = null)
     {
         guardClause.NullOrEmpty(key, nameof(key));
         if (input is null) throw new NotFoundException(key, paramName!);
@@ -20,7 +21,7 @@ public static partial class GuardClauseExtensions
         this IGuardClause guardClause,
         [NotNull] [ValidatedNotNull] TKey key,
         [NotNull] [ValidatedNotNull] T? input,
-        string paramName) where TKey : struct
+        [CallerArgumentExpression("input")] string? paramName = null) where TKey : struct
     {
         guardClause.Null(key, nameof(key));
         if (input is null)

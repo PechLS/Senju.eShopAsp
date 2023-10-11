@@ -1,3 +1,5 @@
+using System.Runtime.CompilerServices;
+
 namespace eShopAsp.Core.GuardClauses;
 
 public static partial class GuardClauseExtensions
@@ -13,22 +15,22 @@ public static partial class GuardClauseExtensions
         return input;
     }
 
-    public static int Zero(this IGuardClause guardClause, int input, string paramName, string? message = null)
+    public static int Zero(this IGuardClause guardClause, int input, [CallerArgumentExpression("input")] string? paramName = null, string? message = null)
         => Zero<int>(guardClause, input, paramName!, message);
 
-    public static long Zero(this IGuardClause guardClause, long input, string paramName, string? message = null)
+    public static long Zero(this IGuardClause guardClause, long input, [CallerArgumentExpression("input")] string? paramName = null, string? message = null)
         => Zero<long>(guardClause, input, paramName!, message);
 
-    public static decimal Zero(this IGuardClause guardClause, decimal input, string paramName, string? message = null)
+    public static decimal Zero(this IGuardClause guardClause, decimal input, [CallerArgumentExpression("input")] string? paramName = null, string? message = null)
         => Zero<decimal>(guardClause, input, paramName!, message);
 
-    public static float Zero(this IGuardClause guardClause, float input, string paramName, string? message = null)
+    public static float Zero(this IGuardClause guardClause, float input, [CallerArgumentExpression("input")] string? paramName = null, string? message = null)
         => Zero<float>(guardClause, input, paramName!, message);
     
-    public static double Zero(this IGuardClause guardClause, double input, string paramName, string? message = null)
+    public static double Zero(this IGuardClause guardClause, double input, [CallerArgumentExpression("input")] string? paramName = null, string? message = null)
         => Zero<double>(guardClause, input, paramName!, message);
 
-    public static TimeSpan Zero(this IGuardClause guardClause, TimeSpan input, string paramName)
+    public static TimeSpan Zero(this IGuardClause guardClause, TimeSpan input, [CallerArgumentExpression("input")] string? paramName = null)
         => Zero<TimeSpan>(guardClause, input, paramName!);
 
 

@@ -14,8 +14,12 @@
     <Folder Include="Expressions\" />
     <Folder Include="Extensions\" />
     <Folder Include="GuardClauses\" />
-    <Folder Include="Interfaces\" />
     <Folder Include="Validators\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="12.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="7.0.1" />
   </ItemGroup>
 
 </Project>
