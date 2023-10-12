@@ -9,9 +9,7 @@
   <ItemGroup>
     <Folder Include="Builders\" />
     <Folder Include="Evaluators\" />
-    <Folder Include="Exceptions\" />
     <Folder Include="Expressions\" />
-    <Folder Include="Extensions\" />
     <Folder Include="GuardClauses\" />
     <Folder Include="SmartEnum\Core\" />
     <Folder Include="Validators\" />
