@@ -1,3 +1,4 @@
+using eShopAsp.Core.GuardClauses;
 using eShopAsp.Core.Interfaces;
 
 namespace eShopAsp.Core.Entities.ContributorAggregate;
@@ -5,5 +6,9 @@ namespace eShopAsp.Core.Entities.ContributorAggregate;
 public class Contributor : EntityBase, IAggregateRoot
 {
     public string Name { get; private set; }
-    
+    public ContributorStatus Status { get; private set; } = ContributorStatus.NotSet;
+
+    public Contributor(string name) => Name = Guard.Against.NullOrEmpty(name, nameof(name));
+
+    public void UpdateName(string newName) => Name = Guard.Against.NullOrEmpty(newName, nameof(newName));
 }
