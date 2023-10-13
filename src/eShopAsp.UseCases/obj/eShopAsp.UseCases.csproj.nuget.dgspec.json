@@ -4,6 +4,69 @@
     "/home/dangpech/learn/project/Senju.eShopAsp/src/eShopAsp.UseCases/eShopAsp.UseCases.csproj": {}
   },
   "projects": {
+    "/home/dangpech/learn/project/Senju.eShopAsp/src/eShopAsp.Core/eShopAsp.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/dangpech/learn/project/Senju.eShopAsp/src/eShopAsp.Core/eShopAsp.Core.csproj",
+        "projectName": "eShopAsp.Core",
+        "projectPath": "/home/dangpech/learn/project/Senju.eShopAsp/src/eShopAsp.Core/eShopAsp.Core.csproj",
+        "packagesPath": "/home/dangpech/.nuget/packages/",
+        "outputPath": "/home/dangpech/learn/project/Senju.eShopAsp/src/eShopAsp.Core/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/dangpech/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.1.1, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/dangpech/dotnet/sdk/7.0.401/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "/home/dangpech/learn/project/Senju.eShopAsp/src/eShopAsp.UseCases/eShopAsp.UseCases.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -25,7 +88,11 @@
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "/home/dangpech/learn/project/Senju.eShopAsp/src/eShopAsp.Core/eShopAsp.Core.csproj": {
+                "projectPath": "/home/dangpech/learn/project/Senju.eShopAsp/src/eShopAsp.Core/eShopAsp.Core.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
