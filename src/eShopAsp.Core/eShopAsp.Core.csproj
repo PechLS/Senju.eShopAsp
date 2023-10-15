@@ -9,7 +9,6 @@
   <ItemGroup>
     <Folder Include="Builders\" />
     <Folder Include="Entities\" />
-    <Folder Include="Evaluators\" />
     <Folder Include="Expressions\" />
     <Folder Include="GuardClauses\" />
     <Folder Include="Validators\" />
@@ -17,6 +16,8 @@
 
   <ItemGroup>
     <PackageReference Include="MediatR" Version="12.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.12" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="7.0.12" />
     <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="7.0.1" />
   </ItemGroup>
 
