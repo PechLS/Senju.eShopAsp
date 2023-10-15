@@ -1,0 +1,18 @@
+using eShopAsp.Core.Interfaces;
+using eShopAsp.Core.Interfaces.Evaluators;
+using Microsoft.EntityFrameworkCore;
+
+namespace eShopAsp.Core.Evaluators;
+
+public class AsTrackingEvaluator : IEvaluator
+{
+    private AsTrackingEvaluator(){}
+    public static AsTrackingEvaluator Instance { get; } = new();
+    public bool IsCriteriaEvaluator { get; } = true;
+    
+    public IQueryable<T> GetQuery<T>(IQueryable<T> query, ISpecification<T> specification) where T : class
+    {
+        if (specification.AsTracking) query = query.AsTracking();
+        return query;
+    }
+}
