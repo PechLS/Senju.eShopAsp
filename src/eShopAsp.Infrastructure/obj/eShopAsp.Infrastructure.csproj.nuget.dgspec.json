@@ -4,14 +4,14 @@
     "/home/dangpech/learn/project/Senju.eShopAsp/src/eShopAsp.Infrastructure/eShopAsp.Infrastructure.csproj": {}
   },
   "projects": {
-    "/home/dangpech/learn/project/Senju.eShopAsp/src/eShopAsp.Infrastructure/eShopAsp.Infrastructure.csproj": {
+    "/home/dangpech/learn/project/Senju.eShopAsp/src/eShopAsp.Core/eShopAsp.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/dangpech/learn/project/Senju.eShopAsp/src/eShopAsp.Infrastructure/eShopAsp.Infrastructure.csproj",
-        "projectName": "eShopAsp.Infrastructure",
-        "projectPath": "/home/dangpech/learn/project/Senju.eShopAsp/src/eShopAsp.Infrastructure/eShopAsp.Infrastructure.csproj",
+        "projectUniqueName": "/home/dangpech/learn/project/Senju.eShopAsp/src/eShopAsp.Core/eShopAsp.Core.csproj",
+        "projectName": "eShopAsp.Core",
+        "projectPath": "/home/dangpech/learn/project/Senju.eShopAsp/src/eShopAsp.Core/eShopAsp.Core.csproj",
         "packagesPath": "/home/dangpech/.nuget/packages/",
-        "outputPath": "/home/dangpech/learn/project/Senju.eShopAsp/src/eShopAsp.Infrastructure/obj/",
+        "outputPath": "/home/dangpech/learn/project/Senju.eShopAsp/src/eShopAsp.Core/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/dangpech/.nuget/NuGet/NuGet.Config"
@@ -41,8 +41,153 @@
             "MediatR": {
               "target": "Package",
               "version": "[12.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[7.0.12, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.1, )"
             }
           },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/dangpech/dotnet/sdk/7.0.401/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/dangpech/learn/project/Senju.eShopAsp/src/eShopAsp.Infrastructure/eShopAsp.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/dangpech/learn/project/Senju.eShopAsp/src/eShopAsp.Infrastructure/eShopAsp.Infrastructure.csproj",
+        "projectName": "eShopAsp.Infrastructure",
+        "projectPath": "/home/dangpech/learn/project/Senju.eShopAsp/src/eShopAsp.Infrastructure/eShopAsp.Infrastructure.csproj",
+        "packagesPath": "/home/dangpech/.nuget/packages/",
+        "outputPath": "/home/dangpech/learn/project/Senju.eShopAsp/src/eShopAsp.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/dangpech/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/home/dangpech/learn/project/Senju.eShopAsp/src/eShopAsp.Core/eShopAsp.Core.csproj": {
+                "projectPath": "/home/dangpech/learn/project/Senju.eShopAsp/src/eShopAsp.Core/eShopAsp.Core.csproj"
+              },
+              "/home/dangpech/learn/project/Senju.eShopAsp/src/eShopAsp.UseCases/eShopAsp.UseCases.csproj": {
+                "projectPath": "/home/dangpech/learn/project/Senju.eShopAsp/src/eShopAsp.UseCases/eShopAsp.UseCases.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[7.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[7.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.12, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/dangpech/dotnet/sdk/7.0.401/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/dangpech/learn/project/Senju.eShopAsp/src/eShopAsp.UseCases/eShopAsp.UseCases.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/dangpech/learn/project/Senju.eShopAsp/src/eShopAsp.UseCases/eShopAsp.UseCases.csproj",
+        "projectName": "eShopAsp.UseCases",
+        "projectPath": "/home/dangpech/learn/project/Senju.eShopAsp/src/eShopAsp.UseCases/eShopAsp.UseCases.csproj",
+        "packagesPath": "/home/dangpech/.nuget/packages/",
+        "outputPath": "/home/dangpech/learn/project/Senju.eShopAsp/src/eShopAsp.UseCases/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/dangpech/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/home/dangpech/learn/project/Senju.eShopAsp/src/eShopAsp.Core/eShopAsp.Core.csproj": {
+                "projectPath": "/home/dangpech/learn/project/Senju.eShopAsp/src/eShopAsp.Core/eShopAsp.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
           "imports": [
             "net461",
             "net462",

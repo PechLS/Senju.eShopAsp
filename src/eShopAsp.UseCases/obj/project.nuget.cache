@@ -1,13 +1,24 @@
 {
   "version": 2,
-  "dgSpecHash": "C8gxQ1eLC1LALo36eoEcwV6hjD2TlSBS2sAvtlffTUSKItWKD1076HYTqpC20430DT6BAAvN4ZdMfHtVlxxY2w==",
+  "dgSpecHash": "/Dons3e4tAQ8KT+1wim4S97hozeCR8e4VkxfiNIns30vPXiSIlQ+q2thdRbkAX0IMlfRElsbJiZStQe61bHBrA==",
   "success": true,
   "projectFilePath": "/home/dangpech/learn/project/Senju.eShopAsp/src/eShopAsp.UseCases/eShopAsp.UseCases.csproj",
   "expectedPackageFiles": [
     "/home/dangpech/.nuget/packages/mediatr/12.1.1/mediatr.12.1.1.nupkg.sha512",
     "/home/dangpech/.nuget/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512",
-    "/home/dangpech/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/6.0.0/microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
-    "/home/dangpech/.nuget/packages/microsoft.extensions.logging.abstractions/7.0.1/microsoft.extensions.logging.abstractions.7.0.1.nupkg.sha512"
+    "/home/dangpech/.nuget/packages/microsoft.entityframeworkcore/7.0.12/microsoft.entityframeworkcore.7.0.12.nupkg.sha512",
+    "/home/dangpech/.nuget/packages/microsoft.entityframeworkcore.abstractions/7.0.12/microsoft.entityframeworkcore.abstractions.7.0.12.nupkg.sha512",
+    "/home/dangpech/.nuget/packages/microsoft.entityframeworkcore.analyzers/7.0.12/microsoft.entityframeworkcore.analyzers.7.0.12.nupkg.sha512",
+    "/home/dangpech/.nuget/packages/microsoft.entityframeworkcore.relational/7.0.12/microsoft.entityframeworkcore.relational.7.0.12.nupkg.sha512",
+    "/home/dangpech/.nuget/packages/microsoft.extensions.caching.abstractions/7.0.0/microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
+    "/home/dangpech/.nuget/packages/microsoft.extensions.caching.memory/7.0.0/microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
+    "/home/dangpech/.nuget/packages/microsoft.extensions.configuration.abstractions/7.0.0/microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
+    "/home/dangpech/.nuget/packages/microsoft.extensions.dependencyinjection/7.0.0/microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
+    "/home/dangpech/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/7.0.0/microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "/home/dangpech/.nuget/packages/microsoft.extensions.logging/7.0.0/microsoft.extensions.logging.7.0.0.nupkg.sha512",
+    "/home/dangpech/.nuget/packages/microsoft.extensions.logging.abstractions/7.0.1/microsoft.extensions.logging.abstractions.7.0.1.nupkg.sha512",
+    "/home/dangpech/.nuget/packages/microsoft.extensions.options/7.0.0/microsoft.extensions.options.7.0.0.nupkg.sha512",
+    "/home/dangpech/.nuget/packages/microsoft.extensions.primitives/7.0.0/microsoft.extensions.primitives.7.0.0.nupkg.sha512"
   ],
   "logs": []
 }
