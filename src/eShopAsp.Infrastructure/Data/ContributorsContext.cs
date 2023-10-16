@@ -6,11 +6,11 @@ using Microsoft.EntityFrameworkCore;
 
 namespace eShopAsp.Infrastructure.Data;
 
-public class AppDbContext : DbContext
+public class ContributorsContext : DbContext
 {
     private readonly IDomainEventDispatcher? _dispatcher;
 
-    public AppDbContext(DbContextOptions<AppDbContext> options, IDomainEventDispatcher? dispatcher)
+    public ContributorsContext(DbContextOptions<ContributorsContext> options, IDomainEventDispatcher? dispatcher)
         : base(options) => _dispatcher = dispatcher;
 
     public DbSet<Contributor> Contributors => Set<Contributor>();
