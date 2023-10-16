@@ -46,21 +46,21 @@ public static partial class GuardClauseExtensions
         return input;
     }
 
-    public static int NegativeOrZero(IGuardClause guardClause, int input, [CallerArgumentExpression("input")] string? paramName = null, string? message = null)
+    public static int NegativeOrZero(this IGuardClause guardClause, int input, [CallerArgumentExpression("input")] string? paramName = null, string? message = null)
         => NegativeOrZero<int>(guardClause, input, paramName, message);
     
-    public static long NegativeOrZero(IGuardClause guardClause, long input, [CallerArgumentExpression("input")] string? paramName = null, string? message = null)
+    public static long NegativeOrZero(this IGuardClause guardClause, long input, [CallerArgumentExpression("input")] string? paramName = null, string? message = null)
         => NegativeOrZero<long>(guardClause, input, paramName, message);
     
-    public static decimal NegativeOrZero(IGuardClause guardClause, decimal input, [CallerArgumentExpression("input")] string? paramName = null, string? message = null)
+    public static decimal NegativeOrZero(this IGuardClause guardClause, decimal input, [CallerArgumentExpression("input")] string? paramName = null, string? message = null)
         => NegativeOrZero<decimal>(guardClause, input, paramName, message);
     
-    public static float NegativeOrZero(IGuardClause guardClause, float input,[CallerArgumentExpression("input")] string? paramName = null, string? message = null)
+    public static float NegativeOrZero(this IGuardClause guardClause, float input,[CallerArgumentExpression("input")] string? paramName = null, string? message = null)
         => NegativeOrZero<float>(guardClause, input, paramName, message);
     
-    public static double NegativeOrZero(IGuardClause guardClause, double input, [CallerArgumentExpression("input")] string? paramName = null, string? message = null)
+    public static double NegativeOrZero(this IGuardClause guardClause, double input, [CallerArgumentExpression("input")] string? paramName = null, string? message = null)
         => NegativeOrZero<double>(guardClause, input, paramName, message);
     
-    public static TimeSpan NegativeOrZero(IGuardClause guardClause, TimeSpan input, [CallerArgumentExpression("input")] string? paramName= null, string? message = null)
+    public static TimeSpan NegativeOrZero(this IGuardClause guardClause, TimeSpan input, [CallerArgumentExpression("input")] string? paramName= null, string? message = null)
         => NegativeOrZero<TimeSpan>(guardClause, input, paramName, message);
 }
