@@ -6,8 +6,8 @@ namespace eShopAsp.Infrastructure.Data.Queries;
 
 public class ListContributorsQueryService : IListContributorsQueryService
 {
-    private readonly AppDbContext _db;
-    public ListContributorsQueryService(AppDbContext dbContext) => _db = dbContext;
+    private readonly ContributorsContext _db;
+    public ListContributorsQueryService(ContributorsContext dbContext) => _db = dbContext;
 
     public async Task<IEnumerable<ContributorDTO>> ListAsync()
     {
