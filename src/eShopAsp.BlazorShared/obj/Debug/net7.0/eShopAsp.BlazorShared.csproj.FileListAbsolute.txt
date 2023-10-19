@@ -1,0 +1,12 @@
+/home/dangpech/learn/project/Senju.eShopAsp/src/eShopAsp.BlazorShared/bin/Debug/net7.0/eShopAsp.BlazorShared.deps.json
+/home/dangpech/learn/project/Senju.eShopAsp/src/eShopAsp.BlazorShared/bin/Debug/net7.0/eShopAsp.BlazorShared.dll
+/home/dangpech/learn/project/Senju.eShopAsp/src/eShopAsp.BlazorShared/bin/Debug/net7.0/eShopAsp.BlazorShared.pdb
+/home/dangpech/learn/project/Senju.eShopAsp/src/eShopAsp.BlazorShared/obj/Debug/net7.0/eShopAsp.BlazorShared.csproj.AssemblyReference.cache
+/home/dangpech/learn/project/Senju.eShopAsp/src/eShopAsp.BlazorShared/obj/Debug/net7.0/eShopAsp.BlazorShared.GeneratedMSBuildEditorConfig.editorconfig
+/home/dangpech/learn/project/Senju.eShopAsp/src/eShopAsp.BlazorShared/obj/Debug/net7.0/eShopAsp.BlazorShared.AssemblyInfoInputs.cache
+/home/dangpech/learn/project/Senju.eShopAsp/src/eShopAsp.BlazorShared/obj/Debug/net7.0/eShopAsp.BlazorShared.AssemblyInfo.cs
+/home/dangpech/learn/project/Senju.eShopAsp/src/eShopAsp.BlazorShared/obj/Debug/net7.0/eShopAsp.BlazorShared.csproj.CoreCompileInputs.cache
+/home/dangpech/learn/project/Senju.eShopAsp/src/eShopAsp.BlazorShared/obj/Debug/net7.0/eShopAsp.BlazorShared.dll
+/home/dangpech/learn/project/Senju.eShopAsp/src/eShopAsp.BlazorShared/obj/Debug/net7.0/refint/eShopAsp.BlazorShared.dll
+/home/dangpech/learn/project/Senju.eShopAsp/src/eShopAsp.BlazorShared/obj/Debug/net7.0/eShopAsp.BlazorShared.pdb
+/home/dangpech/learn/project/Senju.eShopAsp/src/eShopAsp.BlazorShared/obj/Debug/net7.0/ref/eShopAsp.BlazorShared.dll
