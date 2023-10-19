@@ -17,7 +17,16 @@ public class GetCatalogItemHandler : IQueryHandler<GetCatalogItemQuery, Result<C
         var specification = new CatalogItemByIdSpecification(request.CatalogItemId);
         var entity = await _repository.GetByIdAsync(specification);
         if (entity is null) return Result.NotFound();
-        return new CatalogItemDTO(entity.Id, entity.Name, entity.Description, entity.Price, entity.PictureUri,
-            entity.CatalogTypeId, entity.CatalogBrandId);
+        return new CatalogItemDTO()
+        {
+            Id = entity.Id, 
+            Name = entity.Name,
+            Description = entity.Description, 
+            Price = entity.Price, 
+            PictureUri = entity.PictureUri,
+            CatalogTypeId = entity.CatalogTypeId, 
+            CatalogBrandId = entity.CatalogBrandId
+            
+        };
     }
 }

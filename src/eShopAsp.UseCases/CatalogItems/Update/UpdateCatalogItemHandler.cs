@@ -26,13 +26,13 @@ public class UpdateCatalogItemHandler : ICommandHandler<UpdateCatalogItemCommand
         existingCatalogItem.UpdateBrand(request.CatalogBrandId);
         existingCatalogItem.UpdateType(request.CatalogItemId);
         await _repository.UpdateAsync(existingCatalogItem, cancellationToken);
-        return new CatalogItemDTO (
-            existingCatalogItem.Id,
-            existingCatalogItem.Name,
-            existingCatalogItem.Description,
-            existingCatalogItem.Price,
-            existingCatalogItem.PictureUri,
-            existingCatalogItem.CatalogTypeId,
-            existingCatalogItem.CatalogBrandId);
+        return new CatalogItemDTO (){
+            Id = existingCatalogItem.Id,
+            Name = existingCatalogItem.Name,
+            Description = existingCatalogItem.Description,
+            Price = existingCatalogItem.Price,
+            PictureUri = existingCatalogItem.PictureUri,
+            CatalogTypeId = existingCatalogItem.CatalogTypeId,
+            CatalogBrandId = existingCatalogItem.CatalogBrandId};
     }
 }
