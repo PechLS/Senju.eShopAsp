@@ -1,0 +1,29 @@
+{
+  "Version": 1,
+  "Hash": "lsHDdq8EYFGx8DPY8JwYwkAr6kPHEJWFHjUJTwsG/gw=",
+  "Source": "eShopAsp.PublicApi",
+  "BasePath": "_content/eShopAsp.PublicApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [
+    {
+      "Identity": "/home/dangpech/.nuget/packages/blazorinputfile/0.2.0/staticwebassets/inputfile.js",
+      "SourceId": "BlazorInputFile",
+      "SourceType": "Package",
+      "ContentRoot": "/home/dangpech/.nuget/packages/blazorinputfile/0.2.0/staticwebassets/",
+      "BasePath": "_content/BlazorInputFile",
+      "RelativePath": "inputfile.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/home/dangpech/.nuget/packages/blazorinputfile/0.2.0/staticwebassets/inputfile.js"
+    }
+  ]
+}
