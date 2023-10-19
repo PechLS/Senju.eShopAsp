@@ -1,0 +1,12 @@
+/home/dangpech/learn/project/Senju.eShopAsp/src/eShopAsp.Core/bin/Debug/net7.0/eShopAsp.Core.deps.json
+/home/dangpech/learn/project/Senju.eShopAsp/src/eShopAsp.Core/bin/Debug/net7.0/eShopAsp.Core.dll
+/home/dangpech/learn/project/Senju.eShopAsp/src/eShopAsp.Core/bin/Debug/net7.0/eShopAsp.Core.pdb
+/home/dangpech/learn/project/Senju.eShopAsp/src/eShopAsp.Core/obj/Debug/net7.0/eShopAsp.Core.csproj.AssemblyReference.cache
+/home/dangpech/learn/project/Senju.eShopAsp/src/eShopAsp.Core/obj/Debug/net7.0/eShopAsp.Core.GeneratedMSBuildEditorConfig.editorconfig
+/home/dangpech/learn/project/Senju.eShopAsp/src/eShopAsp.Core/obj/Debug/net7.0/eShopAsp.Core.AssemblyInfoInputs.cache
+/home/dangpech/learn/project/Senju.eShopAsp/src/eShopAsp.Core/obj/Debug/net7.0/eShopAsp.Core.AssemblyInfo.cs
+/home/dangpech/learn/project/Senju.eShopAsp/src/eShopAsp.Core/obj/Debug/net7.0/eShopAsp.Core.csproj.CoreCompileInputs.cache
+/home/dangpech/learn/project/Senju.eShopAsp/src/eShopAsp.Core/obj/Debug/net7.0/eShopAsp.Core.dll
+/home/dangpech/learn/project/Senju.eShopAsp/src/eShopAsp.Core/obj/Debug/net7.0/refint/eShopAsp.Core.dll
+/home/dangpech/learn/project/Senju.eShopAsp/src/eShopAsp.Core/obj/Debug/net7.0/eShopAsp.Core.pdb
+/home/dangpech/learn/project/Senju.eShopAsp/src/eShopAsp.Core/obj/Debug/net7.0/ref/eShopAsp.Core.dll
