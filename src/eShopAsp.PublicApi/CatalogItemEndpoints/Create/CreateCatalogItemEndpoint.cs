@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Authorization;
 using eShopAsp.Core.Entities.CatalogItemAggregate.Specifications;
 using eShopAsp.Core.Exceptions;
 using eShopAsp.UseCases.CatalogItems;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 
 namespace eShopAsp.PublicApi.CatalogItemEndpoints.Create;
 
@@ -17,11 +18,12 @@ public class CreateCatalogItemEndpoint : IEndpoint<IResult, CreateCatalogItemReq
     public void AddRoute(IEndpointRouteBuilder app)
     {
         app.MapPost("api/catalog-items",
-             [Authorize]   
+             [Authorize(Roles = BlazorShared.Authorizations.Constants.ADMINISTRATOR,
+                AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]   
              async (CreateCatalogItemRequest request, IRepository<CatalogItem> itemRepository) 
              => await  HandleAsync(request, itemRepository))
             .Produces<CreateCatalogItemRequest>()
-            .WithTags("CreateCatalogItemEndpoints");
+            .WithTags("CatalogItemEndpoints");
     }
 
     public async Task<IResult> HandleAsync(CreateCatalogItemRequest request, IRepository<CatalogItem> repository)

@@ -14,10 +14,10 @@ public class AppIdentityDbContextSeed
         if (identityDbContext.Database.IsSqlite()) identityDbContext.Database.Migrate();
         
         await roleManager.CreateAsync(new IdentityRole(BlazorShared.Authorizations.Constants.ADMINISTRATOR));
-        var defaultUser = new ApplicationUser { UserName = "demouser@microsoft,com", Email = "demouser@microsoft.com" };
+        var defaultUser = new ApplicationUser { UserName = "demouser@microsoft.com", Email = "user@test.com" };
         await userManager.CreateAsync(defaultUser, AuthorizationConstants.DEFAULT_PASSWORD);
 
-        string adminUserName = "admin@microsoft.com";
+        string adminUserName = "admin@test.com";
         var adminUser = new ApplicationUser { UserName = adminUserName, Email = adminUserName };
         await userManager.CreateAsync(adminUser, AuthorizationConstants.DEFAULT_PASSWORD);
         adminUser = await userManager.FindByNameAsync(adminUserName);

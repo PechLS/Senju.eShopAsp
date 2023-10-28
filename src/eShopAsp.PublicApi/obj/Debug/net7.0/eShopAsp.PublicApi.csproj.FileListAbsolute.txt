@@ -1,6 +1,5 @@
 /home/dangpech/learn/project/Senju.eShopAsp/src/eShopAsp.PublicApi/bin/Debug/net7.0/appsettings.Development.json
 /home/dangpech/learn/project/Senju.eShopAsp/src/eShopAsp.PublicApi/bin/Debug/net7.0/appsettings.json
-/home/dangpech/learn/project/Senju.eShopAsp/src/eShopAsp.PublicApi/bin/Debug/net7.0/appsettings.test.json
 /home/dangpech/learn/project/Senju.eShopAsp/src/eShopAsp.PublicApi/bin/Debug/net7.0/eShopAsp.PublicApi.staticwebassets.runtime.json
 /home/dangpech/learn/project/Senju.eShopAsp/src/eShopAsp.PublicApi/bin/Debug/net7.0/eShopAsp.PublicApi
 /home/dangpech/learn/project/Senju.eShopAsp/src/eShopAsp.PublicApi/bin/Debug/net7.0/eShopAsp.PublicApi.deps.json

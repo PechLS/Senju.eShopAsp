@@ -50,7 +50,7 @@ public class SpecificationEvaluator : ISpecificationEvaluator
         var evaluators = evaluateCriteriaOnly ? Evaluators.Where(x => x.IsCriteriaEvaluator) : Evaluators;
         foreach (var evaluator in evaluators)
         {
-            query = GetQuery(query, specification);
+            query = evaluator.GetQuery(query, specification);
         }
 
         return query;

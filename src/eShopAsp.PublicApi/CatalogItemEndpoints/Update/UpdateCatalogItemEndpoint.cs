@@ -2,6 +2,8 @@ using eShopAsp.Core.Entities.CatalogItemAggregate;
 using eShopAsp.Core.Interfaces;
 using eShopAsp.Core.Interfaces.Services;
 using eShopAsp.UseCases.CatalogItems;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using MinimalApi.Endpoint;
 
 namespace eShopAsp.PublicApi.CatalogItemEndpoints.Update;
@@ -14,10 +16,12 @@ public class UpdateCatalogItemEndpoint : IEndpoint<IResult, UpdateCatalogItemReq
     public void AddRoute(IEndpointRouteBuilder app)
     {
         app.MapPut("api/catalog-items",
+                [Authorize(Roles = BlazorShared.Authorizations.Constants.ADMINISTRATOR, 
+                    AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
                 async (UpdateCatalogItemRequest request, IRepository<CatalogItem> repository)
                     => await HandleAsync(request, repository))
             .Produces<UpdateCatalogItemResponse>()
-            .WithTags("CatalogItemEndpoint");
+            .WithTags("CatalogItemEndpoints");
     }
 
     public async Task<IResult> HandleAsync(UpdateCatalogItemRequest request, IRepository<CatalogItem> repository)
